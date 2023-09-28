@@ -14,12 +14,12 @@ st.title('Impact of Family History on Heart Patients')
 
 plt.subplot(2,1,1)
 plt.pie(dead_famhist,labels=['Absent','Present'],autopct='%1.1f%%')
-plt.title('Family History of Patients succumbed to Heart Disease : Present vs. Absent')
+plt.title('Family History of Patients who succumbed to Heart Disease : Present vs. Absent')
 
 
 plt.subplot(2,1,2)
 plt.pie(survived_famhist,labels=['Absent','Present'],autopct='%1.1f%%')
-plt.title('Family History of Patients survived a Heart condition : Present vs. Absent')
+plt.title('Family History of Patients who survived a Heart condition : Present vs. Absent')
 plt.show()
 
 st.pyplot(plt)
