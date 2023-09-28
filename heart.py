@@ -10,7 +10,7 @@ df_dead=df[df['chd']==1]
 dead_famhist=df_dead.groupby('famhist')['chd'].count()
 survived_famhist=df_survived.groupby('famhist')['chd'].count()
 
-st.title('Family History of Heart Patients')
+st.title('Impact of Family History on Heart Patients')
 
 plt.subplot(2,1,1)
 plt.pie(dead_famhist,labels=['Absent','Present'],autopct='%1.1f%%')
